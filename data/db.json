@@ -1,0 +1,261 @@
+{
+  "users": [
+    {
+      "id": "user-patient-1",
+      "name": "Priya Sharma",
+      "email": "patient@24care.ai",
+      "password": "password123",
+      "role": "patient",
+      "phone": "+91 98765 43210",
+      "age": 34,
+      "gender": "Female",
+      "bloodGroup": "B+",
+      "allergies": [
+        "Penicillin (Hives)",
+        "Shellfish"
+      ],
+      "chronicConditions": [
+        "Mild Allergic Asthma"
+      ],
+      "emergencyContactName": "Aarav Sharma (Spouse)",
+      "emergencyContactPhone": "+91 98765 43211",
+      "preferredTheme": "mint",
+      "appearanceMode": "light",
+      "fontSize": "standard",
+      "layoutDensity": "comfortable",
+      "cardRadius": "modern",
+      "reducedMotion": false,
+      "dataSharingConsent": true,
+      "createdAt": "2026-01-15T09:00:00Z"
+    },
+    {
+      "id": "user-doctor-1",
+      "name": "Dr. Rajesh K., MD",
+      "email": "dr.rajesh@24care.ai",
+      "password": "password123",
+      "role": "doctor",
+      "phone": "+91 98111 22334",
+      "specialty": "Internal Medicine & Pulmonology",
+      "qualifications": "MBBS, MD (General Medicine), FCCP",
+      "clinicAddress": "Apollo Cradle, Indiranagar, Bengaluru",
+      "licenseNumber": "KMC-74892",
+      "preferredTheme": "mint",
+      "appearanceMode": "light",
+      "createdAt": "2026-01-10T08:00:00Z"
+    },
+    {
+      "id": "user-admin-1",
+      "name": "Super Admin",
+      "email": "admin@24care.ai",
+      "password": "password123",
+      "role": "admin",
+      "phone": "+91 99000 00001",
+      "preferredTheme": "mint",
+      "appearanceMode": "light",
+      "createdAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "healthRecords": [
+    {
+      "id": "rec-1",
+      "userId": "user-patient-1",
+      "type": "condition",
+      "title": "Mild Allergic Asthma",
+      "date": "2024-04-12",
+      "details": "Diagnosed by pulmonologist. Triggered by seasonal pollen and cold humidity.",
+      "tags": [
+        "Respiratory",
+        "Chronic"
+      ],
+      "severity": "mild",
+      "status": "active",
+      "createdAt": "2026-01-15T10:00:00Z"
+    },
+    {
+      "id": "rec-2",
+      "userId": "user-patient-1",
+      "type": "allergy",
+      "title": "Penicillin Allergy",
+      "date": "2023-08-01",
+      "details": "Severe hives and facial angioedema observed after Amoxicillin administration in 2023.",
+      "tags": [
+        "Antibiotic",
+        "Critical Alert"
+      ],
+      "severity": "severe",
+      "status": "active",
+      "createdAt": "2026-01-15T10:05:00Z"
+    },
+    {
+      "id": "rec-3",
+      "userId": "user-patient-1",
+      "type": "medication",
+      "title": "Budecort Inhaler 200mcg",
+      "date": "2025-11-20",
+      "details": "1 puff twice daily after gargling. Maintenance controller therapy.",
+      "tags": [
+        "Inhaler",
+        "Steroid"
+      ],
+      "severity": "mild",
+      "status": "active",
+      "createdAt": "2026-01-15T10:10:00Z"
+    },
+    {
+      "id": "rec-4",
+      "userId": "user-patient-1",
+      "type": "medication",
+      "title": "Montelukast 10mg",
+      "date": "2025-11-20",
+      "details": "1 tablet nightly before bed for seasonal rhinitis control.",
+      "tags": [
+        "Oral",
+        "Antihistamine/Antileukotriene"
+      ],
+      "severity": "mild",
+      "status": "active",
+      "createdAt": "2026-01-15T10:15:00Z"
+    },
+    {
+      "id": "rec-5",
+      "userId": "user-patient-1",
+      "type": "instruction",
+      "title": "Peak Flow Monitoring Protocol",
+      "date": "2026-02-01",
+      "details": "Record peak flow every morning. If score drops below 350 L/min, use rescue Levolin inhaler and message clinic.",
+      "tags": [
+        "Monitoring",
+        "Action Plan"
+      ],
+      "severity": "moderate",
+      "status": "active",
+      "createdAt": "2026-02-01T11:00:00Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt-1",
+      "patientId": "user-patient-1",
+      "patientName": "Priya Sharma",
+      "doctorId": "user-doctor-1",
+      "doctorName": "Dr. Rajesh K., MD",
+      "specialty": "Internal Medicine & Pulmonology",
+      "date": "2026-10-18",
+      "timeSlot": "11:30 AM",
+      "type": "In-person",
+      "reason": "Quarterly respiratory check-up & seasonal pollen management",
+      "status": "confirmed",
+      "createdAt": "2026-10-05T14:20:00Z"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rep-1",
+      "userId": "user-patient-1",
+      "title": "Comprehensive Metabolic & CBC Panel",
+      "date": "2026-09-28",
+      "reportType": "Blood Test",
+      "fileName": "CBC_Lipid_Panel_Sep2026.pdf",
+      "fileSize": "1.4 MB",
+      "extractedText": "HEMOGLOBIN: 12.8 g/dL (Ref: 12.0-15.5)\nWBC: 6,800 /mcL (Ref: 4,500-11,000)\nEOSINOPHILS: 6.2% [HIGH] (Ref: 1.0-4.0%)\nFASTING BLOOD GLUCOSE: 92 mg/dL (Ref: 70-99)\nTOTAL CHOLESTEROL: 182 mg/dL (Ref: <200)\nVITAMIN D-25 OH: 22.4 ng/mL [BORDERLINE LOW] (Ref: 30-100)",
+      "aiSummary": "Overall healthy blood counts and normal metabolic function. Mild eosinophilia (6.2%) is consistent with allergic asthma diathesis. Vitamin D is borderline insufficient (22.4 ng/mL); consider asking physician about standard weekly D3 supplementation.",
+      "keyParameters": [
+        {
+          "name": "Hemoglobin",
+          "value": "12.8 g/dL",
+          "range": "12.0 - 15.5 g/dL",
+          "status": "Normal"
+        },
+        {
+          "name": "Eosinophils",
+          "value": "6.2%",
+          "range": "1.0 - 4.0%",
+          "status": "High"
+        },
+        {
+          "name": "Fasting Glucose",
+          "value": "92 mg/dL",
+          "range": "70 - 99 mg/dL",
+          "status": "Normal"
+        },
+        {
+          "name": "Vitamin D",
+          "value": "22.4 ng/mL",
+          "range": "30.0 - 100.0 ng/mL",
+          "status": "Borderline"
+        }
+      ],
+      "doctorQuestions": [
+        "Should I begin oral Vitamin D3 replacement therapy?",
+        "Does the eosinophil reading indicate worsening seasonal allergy control?"
+      ],
+      "isSample": true,
+      "createdAt": "2026-09-28T16:00:00Z"
+    }
+  ],
+  "briefs": [
+    {
+      "id": "brief-1",
+      "patientId": "user-patient-1",
+      "patientName": "Priya Sharma",
+      "title": "Pulmonology Consultation Clinical Brief",
+      "date": "2026-10-18",
+      "reasonForVisit": "Pre-winter respiratory assessment, occasional nocturnal wheezing past 10 days.",
+      "symptomsSummary": "Dry cough and mild chest tightness waking up at 4 AM 2 nights this week. Relieved by warm water and rescue puff.",
+      "relevantHistory": "Mild Allergic Asthma diagnosed 2024. Penicillin hypersensitivity.",
+      "allergies": [
+        "Penicillin (Anaphylactoid/Urticaria)",
+        "Shellfish"
+      ],
+      "currentMedications": [
+        "Budecort Inhaler 200mcg BID",
+        "Montelukast 10mg QHS"
+      ],
+      "keyLabFindings": "CBC showing 6.2% eosinophilia (Sep 2026). Vitamin D 22.4 ng/mL.",
+      "questionsForDoctor": [
+        "Should we step up to a combination LABA/ICS inhaler for the winter?",
+        "Is an updated spirometry / pulmonary function test indicated this visit?"
+      ],
+      "shareCode": "CARE-7892-BRIEF",
+      "createdAt": "2026-10-08T09:30:00Z"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "id": "ec-1",
+      "userId": "user-patient-1",
+      "name": "Aarav Sharma",
+      "relation": "Spouse",
+      "phone": "+91 98765 43211",
+      "notifyOnSos": true
+    },
+    {
+      "id": "ec-2",
+      "userId": "user-patient-1",
+      "name": "Kavita Sharma",
+      "relation": "Sister",
+      "phone": "+91 98765 43212",
+      "notifyOnSos": false
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1791686460906-n8r0g",
+      "userId": "user-patient-1",
+      "userEmail": "patient@24care.ai",
+      "category": "TRIAGE",
+      "action": "ASSESSMENT_REQUEST",
+      "details": "Symptom assessment triggered for: severe chest pain radiating to left arm and cannot breathe...",
+      "timestamp": "2026-10-11T02:41:00.906Z"
+    },
+    {
+      "id": "log-1",
+      "userId": "user-patient-1",
+      "userEmail": "patient@24care.ai",
+      "action": "USER_LOGIN",
+      "category": "AUTH",
+      "details": "User authenticated successfully via credentials.",
+      "timestamp": "2026-10-10T19:00:00Z"
+    }
+  ]
+}
